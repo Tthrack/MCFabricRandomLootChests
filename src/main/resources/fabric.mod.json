@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "randomlootchests",
+  "version": "${version}",
+  "name": "Random Loot Chests",
+  "description": "Refills OP-created named loot chests every 2 hours when empty.",
+  "authors": ["Codex"],
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.example.randomloot.RandomLootChestsMod"
+    ]
+  },
+  "mixins": [
+    "randomlootchests.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "1.21.1",
+    "fabric-api": "*"
+  }
+}
